@@ -7,8 +7,8 @@ import (
 )
 
 func CartRoutes(incomingRoutes *gin.Engine) {
-	incomingRoutes.GET("/addToCart", controllers.AddToCart())
-	incomingRoutes.GET("/removeItem", controllers.RemoveItem())
-	incomingRoutes.GET("/cartCheckout", controllers.CartCheckout())
-	incomingRoutes.GET("/instantBuy", controllers.InstantBuy())
+	incomingRoutes.GET("cart/addToCart", controllers.AddToCart())
+	incomingRoutes.GET("cart/removeItem", controllers.RemoveItem())
+	incomingRoutes.GET("cart/cartCheckout", controllers.CartCheckout())
+	incomingRoutes.GET("cart/instantBuy", controllers.InstantBuy())
 }
